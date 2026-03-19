@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Game Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🎮 My Game Portal</h1>
+        <p>Your custom arcade</p>
+    </header>
+
+    <main class="game-grid">
+        <div class="game-card" onclick="openGame('https://html5.gamedistribution.com/rvvASMiMhKXQw11438914644a4913220/')">
+            <img src="https://via.placeholder.com/250x150?text=2048" alt="2048 Game">
+            <h3>2048</h3>
+        </div>
+
+        <div class="game-card" onclick="openGame('https://html5.gamedistribution.com/b5b0ba08287d4bd89af270b20c159bf4/')">
+            <img src="https://via.placeholder.com/250x150?text=Tetris" alt="Tetris">
+            <h3>Tetris</h3>
+        </div>
+        
+        </main>
+
+    <div id="game-player" class="hidden">
+        <div class="player-header">
+            <button onclick="closeGame()">❌ Close Game</button>
+        </div>
+        <iframe id="game-iframe" src="" frameborder="0" width="800" height="600"></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
